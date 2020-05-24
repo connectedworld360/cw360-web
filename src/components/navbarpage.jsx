@@ -56,9 +56,9 @@ render() {
                   <MDBIcon icon="user" />
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default">
-                  <MDBDropdownItem href="/login">Iniciar Sesion</MDBDropdownItem>
-                  <MDBDropdownItem href="/cuenta">Cuenta</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Cerrar Sesion</MDBDropdownItem>
+                  <MDBDropdownItem><Link to="/login">Iniciar Session</Link></MDBDropdownItem>{/* <Link to='/login'> */}
+                  <MDBDropdownItem><Link to="/cuenta">Cuenta</Link></MDBDropdownItem>{/* <Link to='/cuenta'> */}
+                  <MDBDropdownItem><Link to="/#">Cerrar Sesion</Link></MDBDropdownItem>{/* <Link to='#!'> */}
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
