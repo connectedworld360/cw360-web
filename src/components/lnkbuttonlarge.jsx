@@ -1,16 +1,17 @@
 import React, { Fragment } from "react";
 import { MDBBtn } from "mdbreact";
+import {Link} from 'react-router-dom'
 
 const LnkButtonLarge = props => {
   return (
-    <Fragment>
-      <MDBBtn
-        href={props.link}
-        style={{width:'100%'}}
-      >
-        {props.name}
-      </MDBBtn>
-    </Fragment>
+      <Link to={props.link}>
+        <MDBBtn
+          //href={props.link}
+          style={{width:'100%'}}
+        >
+          {props.name}
+        </MDBBtn>
+      </Link>
   );
 }
 
